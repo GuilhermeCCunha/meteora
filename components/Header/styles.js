@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 
 export const StyledHeader = styled.header`
+@media (max-width: 768px) {
+  margin-bottom: 20%;
+}
+  
 background-color: #000000;
 
 height: 58px;
@@ -21,7 +25,10 @@ nav{
     }
     ul.search{
       @media (max-width: 768px) {
-      display: none;
+      position: absolute;
+      padding-top: 135px;  
+      margin-left: 7px;  
+      // display: none;
       }
     }
 }
