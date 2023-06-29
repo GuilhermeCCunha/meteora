@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
 @media (max-width: 768px) {
-  margin-bottom: 20%;
+  margin-bottom: 12vh;
   justify-content: space-between;
+  padding: 0 5vw;   
 }
 
 background-color: #000000;
@@ -75,11 +76,11 @@ nav{
 }
 ul{
   @media (max-width: 1440px) {
-    margin: 16px;
+    margin-left: 2vw;
   }
     padding: 0;
     // margin: 512px;
-    margin: 256px;
+    margin-left: 32vw;
     list-style: none;
     color: #FFFFFF;
     a:link { color: inherit;
@@ -136,12 +137,12 @@ ul{
 `;
 
 export const Menu = styled.div`
-
-  margin-left: 100%;
+  margin-left: 80vw;
   font-size: 30px;
   display: none;
   cursor: pointer;
   z-index: 10;
+  position: absolute;
   @media (max-width: 768px) {
     display: flex;
   }
