@@ -52,7 +52,7 @@ export default function Header() {
                 </Menu>
                 <ul className='search'>
                     <li>
-                        <input type="text" placeholder="" />
+                        <input type="text" placeholder="Digite o produto" />
                     </li>
                     <li>
                         <button>

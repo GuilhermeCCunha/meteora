@@ -27,6 +27,7 @@ nav{
       gap: .5rem;
       input {
         padding: 6px;
+        min-height: 36px;
         font-size: 15px;
         border: 1px solid #000;
     }
@@ -63,6 +64,7 @@ nav{
         padding: 4px;
         font-size: 18px;
         border: 1px solid #000;
+        min-height: 0;
       }
       }
     }
