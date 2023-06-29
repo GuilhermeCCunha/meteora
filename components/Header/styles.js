@@ -24,11 +24,46 @@ nav{
        gap: 40px;
     }
     ul.search{
+      gap: .5rem;
+      input {
+        padding: 6px;
+        font-size: 15px;
+        border: 1px solid #000;
+    }
+    
+      button{
+        background: none;
+        color: #fff;
+        font-weight: 400;
+        padding: 6px;
+        border: 1px solid #fff;
+        font-size: 18px;
+      }
       @media (max-width: 768px) {
+      gap: 0rem;  
+      max-width: 80%;  
       position: absolute;
       padding-top: 135px;  
-      margin-left: 7px;  
+      margin-left: -27px;  
       // display: none;
+      button{
+        max-width: 98%;  
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 700;
+        border: 1px solid #000;
+        color: #000;
+        text-decoration: none;
+      }
+      input{
+        max-width: 98%;  
+        padding: 4px;
+        font-size: 18px;
+        border: 1px solid #000;
+      }
       }
     }
 }
@@ -53,7 +88,7 @@ ul{
   display: flex;
   gap: 20px;
   @media (max-width: 768px) {
-    z-index: 2;/*evita que a barra de menu fique por baixo da imagem*/
+    z-index: 20;/*evita que a barra de menu fique por baixo da imagem*/
     flex-direction: column;
     background-color: #343A40;
     position: fixed;
@@ -94,7 +129,7 @@ export const Menu = styled.div`
   font-size: 30px;
   display: none;
   cursor: pointer;
-  
+  z-index: 10;
   @media (max-width: 768px) {
     display: flex;
   }
