@@ -4,17 +4,21 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
 @media (max-width: 768px) {
   margin-bottom: 20%;
+  justify-content: space-between;
 }
-  
+
 background-color: #000000;
 
 height: 58px;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 padding: 0 20px;   
 nav{
-    display: flex;
+  @media (max-width: 768px) {
     justify-content: space-between;
+  }
+    display: flex;
+    justify-content: center;
     align-items: center;
     padding: 0 20px; 
     ul{
@@ -41,14 +45,14 @@ nav{
         font-size: 18px;
       }
       @media (max-width: 768px) {
-      gap: 0rem;  
+      gap: .3rem;  
       max-width: 80%;  
       position: absolute;
       padding-top: 135px;  
       margin-left: -27px;  
       // display: none;
       button{
-        max-width: 98%;  
+        max-width: 70vw;  
         padding: 4px;
         display: flex;
         justify-content: center;
@@ -60,7 +64,7 @@ nav{
         text-decoration: none;
       }
       input{
-        max-width: 98%;  
+        max-width: 70vw;  
         padding: 4px;
         font-size: 18px;
         border: 1px solid #000;
@@ -70,6 +74,9 @@ nav{
     }
 }
 ul{
+  @media (max-width: 1440px) {
+    margin: 16px;
+  }
     padding: 0;
     // margin: 512px;
     margin: 256px;
@@ -89,6 +96,9 @@ ul{
   }
   display: flex;
   gap: 20px;
+  @media (max-width: 1440px) {
+    gap: 6px;
+  }
   @media (max-width: 768px) {
     z-index: 20;/*evita que a barra de menu fique por baixo da imagem*/
     flex-direction: column;
@@ -151,11 +161,15 @@ export const CloseSidebar = styled.div`
 `;
 
 export const Anchor = styled.a`
+@media (max-width: 1440px) {
+  font-size: 14px;
+}
   font-size: 16px;
   height: 100px;
   transition: 0.3s;
   color: #FFFFFF;
   @media (max-width: 768px) {
+  font-size: 16px;  
   &.active {
     color: #DAFF01 !important;
 
