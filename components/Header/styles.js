@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
 @media (max-width: 768px) {
-  margin-bottom: 12vh;
+  margin-bottom: 78px;
   justify-content: space-between;
   padding: 0 5vw;   
 }
@@ -46,13 +46,14 @@ nav{
         font-size: 18px;
       }
       @media (max-width: 768px) {
-      gap: .3rem;  
+      gap: 1.7vw;  
       max-width: 80%;  
       position: absolute;
       padding-top: 135px;  
       margin-left: -27px;  
       // display: none;
       button{
+        min-width: 12vw;
         max-width: 70vw;  
         padding: 4px;
         display: flex;
@@ -65,6 +66,7 @@ nav{
         text-decoration: none;
       }
       input{
+        min-width: 70vw;
         max-width: 70vw;  
         padding: 4px;
         font-size: 18px;
