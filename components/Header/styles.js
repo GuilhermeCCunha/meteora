@@ -45,6 +45,12 @@ nav{
         border: 1px solid #fff;
         font-size: 18px;
       }
+      @media (max-width: 1440px) {
+        input{
+          max-width: 10vw; 
+          font-size: 8px;
+        }
+      }
       @media (max-width: 768px) {
       gap: 1.7vw;  
       max-width: 80%;  
@@ -100,7 +106,7 @@ ul{
   display: flex;
   gap: 20px;
   @media (max-width: 1440px) {
-    gap: 6px;
+    gap: 0.1vw;
   }
   @media (max-width: 768px) {
     z-index: 20;/*evita que a barra de menu fique por baixo da imagem*/
