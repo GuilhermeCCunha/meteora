@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledImage = styled.div`
+background-color: #895fb5; //#9353FF; 
 img.img1{
     width: 100vw;
     display: block; 

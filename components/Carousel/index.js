@@ -1,7 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,10 +18,14 @@ export default () => {
       navigation={true}
       mousewheel={true}
       keyboard={true}
+      autoplay={{
+        delay: 10000,
+        disableOnInteraction: false,
+      }}
       pagination={{
         clickable: true,
       }}
-      modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+      modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}      
       className="mySwiper"
       style={{
         "--swiper-pagination-bullet-inactive-color": "#999999",
