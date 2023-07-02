@@ -18,6 +18,7 @@ export default () => {
       navigation={true}
       mousewheel={true}
       keyboard={true}
+      rewind={true}
       autoplay={{
         delay: 10000,
         disableOnInteraction: false,
@@ -25,7 +26,7 @@ export default () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}      
+      modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
       className="mySwiper"
       style={{
         "--swiper-pagination-bullet-inactive-color": "#999999",
