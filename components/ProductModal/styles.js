@@ -60,6 +60,31 @@ img{
     width: 50%;
     height: auto;
 }
+input {
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+
+    &:checked {
+        box-shadow: inset 0 0 0 2.5px #9353FF; 
+
+    }
+    &#AzulClaro {
+        background-color: #75D7F0;
+    }
+    &#OffWhite {
+        background-color: #F3F6F7;
+    }
+    &#Preto {
+        background-color: #000000;
+    }
+
+}
 @media (max-width: 768px) {
     img{
         width: 100%;

@@ -37,16 +37,16 @@ export default function ProductModal(props) {
                     <Colors>
 
                         <div >
-                            <input type="radio" id="corAzulClaro" name="cor" />
-                            <label htmlFor="corAzulClaro">Azul Claro</label>
+                            <input type="radio" id="AzulClaro" name="cor" />
+                            <label htmlFor="AzulClaro">Azul Claro</label>
                         </div>
                         <div >
-                            <input type="radio" id="corOffWhite" name="cor" />
-                            <label htmlFor="corOffWhite">Offwhite</label>
+                            <input type="radio" id="OffWhite" name="cor" />
+                            <label htmlFor="OffWhite">Offwhite</label>
                         </div>
                         <div >
-                            <input type="radio" id="corPreto" name="cor" />
-                            <label htmlFor="corPreto">Preto</label>
+                            <input type="radio" id="Preto" name="cor" />
+                            <label htmlFor="Preto">Preto</label>
                         </div>
 
                     </Colors>
