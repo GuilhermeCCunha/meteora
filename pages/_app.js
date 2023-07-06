@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel';
 import Categories from '../components/Categories';
 import Products from '../components/Products';
 import Facilities from '../components/Facilities';
+import Newsletter from '../components/Newsletter';
 
 export default function App({ Component, pageProps }) {
     return (
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }) {
             <Categories/>
             <Products />
             <Facilities />
+            <Newsletter />
             <Component {...pageProps} />
         </>
     );
