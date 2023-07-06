@@ -1,11 +1,10 @@
 import Head from "next/head";
-import styled from 'styled-components'
+import Carousel from "../components/Carousel";
+import Categories from "../components/Categories";
+import Products from "../components/Products";
+import Facilities from "../components/Facilities";
+import Newsletter from "../components/Newsletter";
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: #A5AAFF;
-  text-align: left;
-`
 
 export default function Home() {
   return (
@@ -13,7 +12,11 @@ export default function Home() {
       <Head>
         <title>Meteora</title>
       </Head>
-      <Title>My page</Title>
+      <Carousel />
+      <Categories />
+      <Products />
+      <Facilities />
+      <Newsletter />
     </>
   )
 }
