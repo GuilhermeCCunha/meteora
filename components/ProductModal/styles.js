@@ -4,14 +4,13 @@ export const Modal = styled.dialog`
 padding: 0;
 width: 80vw;
 margin-left: 10vw;
-top:5%;
 height: 95vh;
 overflow: auto;
 position: fixed;
 z-index: 11;
 border: none;
 border-radius: 0px 0px 4px 4px;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+box-shadow: 0px 0px 0px 99999px rgba(0, 0, 0, .75);
 top: 2%;
 bottom: 2%;
 text-align: left;

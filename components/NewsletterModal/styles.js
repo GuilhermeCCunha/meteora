@@ -10,7 +10,7 @@ position: fixed;
 z-index: 11;
 border: none;
 border-radius: 0px 0px 4px 4px;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+box-shadow: 0px 0px 0px 99999px rgba(0, 0, 0, .75);
 margin-top: 0;
 `;
 
