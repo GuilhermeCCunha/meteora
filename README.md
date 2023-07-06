@@ -13,7 +13,7 @@ Projeto criado para o [challenge front-end 7ª edição](https://www.alura.com.b
 
 <!-- ![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev) -->
 
-<!-- 
+
 ## Detalhes do projeto
 
-Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc... -->
+O objetivo do desafio é criar o front-end da loja virtual fictícia de roupas **Meteora**.
