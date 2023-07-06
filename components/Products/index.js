@@ -13,8 +13,8 @@ export default function Products() {
             setProducts(resultsJson);
         })();
     }, []);
-    let [modalStatus, setModalStatus] = useState(false)
-    let [activatedProduct, setActivatedProduct] = useState({
+    const [modalStatus, setModalStatus] = useState(false)
+    const [activatedProduct, setActivatedProduct] = useState({
         _id: 0,
         name: '',
         description: '',
