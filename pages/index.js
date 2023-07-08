@@ -9,6 +9,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [query, setQuery] = useState("");
+  const [category, setCategory] = useState("");
 
   return (
     <>
@@ -17,8 +18,8 @@ export default function Home() {
       </Head>
       <Header onQuery={setQuery} />
       <Carousel />
-      <Categories />
-      <Products query={query} />
+      <Categories category={category} setCategory={setCategory} />
+      <Products query={query} category={category} />
       <Facilities />
       <Newsletter />
     </>

@@ -1,14 +1,14 @@
 import Image from "next/image"
 import { CategoriesDiv, StyledCategories, Title, Subtitles, Item } from "./styles"
 
-export default function Categories() {
+export default function Categories({ category, setCategory }) {
 
     return (
         <StyledCategories>
             <Title>Busque por categoria:</Title>
             <CategoriesDiv>
 
-                <Item href="#">
+                <Item onClick={() => category === "Camisetas" ? setCategory("") : setCategory("Camisetas")}>
                     <Image
                         src="/images/Desktop/Categorias/Categoria camiseta.png"
                         alt="Categoria camisetas"
@@ -18,7 +18,7 @@ export default function Categories() {
                     <Subtitles>Camisetas</Subtitles>
                 </Item>
 
-                <Item href="#">
+                <Item onClick={() => category === "Bolsas" ? setCategory("") : setCategory("Bolsas")}>
                     <Image
                         src="/images/Desktop/Categorias/Categoria Bolsa.png"
                         alt="Categoria bolsas"
@@ -28,7 +28,7 @@ export default function Categories() {
                     <Subtitles>Bolsas</Subtitles>
                 </Item>
 
-                <Item href="#">
+                <Item onClick={() => category === "Calçados" ? setCategory("") : setCategory("Calçados")}>
                     <Image
                         src="/images/Desktop/Categorias/Categoria Calçados.png"
                         alt="Categoria calçados"
@@ -38,7 +38,7 @@ export default function Categories() {
                     <Subtitles>Calçados</Subtitles>
                 </Item>
 
-                <Item href="#">
+                <Item onClick={() => category === "Calças" ? setCategory("") : setCategory("Calças")}>
                     <Image
                         src="/images/Desktop/Categorias/Categoria calça.png"
                         alt="Categoria calças"
@@ -48,7 +48,7 @@ export default function Categories() {
                     <Subtitles>Calças</Subtitles>
                 </Item>
 
-                <Item href="#">
+                <Item onClick={() => category === "Casacos" ? setCategory("") : setCategory("Casacos")} >
                     <Image
                         src="/images/Desktop/Categorias/Categoria casacos.png"
                         alt="Categoria casacos"
@@ -58,7 +58,7 @@ export default function Categories() {
                     <Subtitles>Casacos</Subtitles>
                 </Item>
 
-                <Item href="#">
+                <Item onClick={() => category === "Óculos" ? setCategory("") : setCategory("Óculos")} >
                     <Image
                         src="/images/Desktop/Categorias/Categoria óculos.png"
                         alt="Categoria óculos"

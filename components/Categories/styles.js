@@ -52,7 +52,8 @@ width: 125%;
 }
 `;
 
-export const Item = styled.a`
+export const Item = styled.div`
+cursor: pointer;
 display: flex;
 flex-direction: column;
 &:link {

@@ -1,44 +1,50 @@
 [
-    {
-      "_id": 1,
-      "name": "Camiseta Conforto",
-      "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
-      "price": 70,
-      "img": "camiseta"
-    },
-    {
-      "_id": 2,
-      "name": "Calça Alfaiataria",
-      "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
-      "price": 180,
-      "img": "calça"
-    },
-    {
-      "_id": 3,
-      "name": "Tênis Chunky",
-      "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
-      "price": 250,
-      "img": "Tenis"
-    },
-    {
-      "_id": 4,
-      "name": "Jaqueta Jeans",
-      "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
-      "price": 150,
-      "img": "Jaqueta"
-    },
-    {
-      "_id": 5,
-      "name": "Óculos Redondo",
-      "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
-      "price": 120,
-      "img": "óculos"
-    },
-    {
-      "_id": 6,
-      "name": "Bolsa coringa",
-      "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
-      "price": 120,
-      "img": "Bolsa"
-    }
-  ]
+  {
+    "_id": 1,
+    "name": "Camiseta Conforto",
+    "description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+    "price": 70,
+    "category": "Camisetas",
+    "img": "Camiseta"
+  },
+  {
+    "_id": 2,
+    "name": "Calça Alfaiataria",
+    "description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+    "price": 180,
+    "category": "Calças",
+    "img": "Calça"
+  },
+  {
+    "_id": 3,
+    "name": "Tênis Chunky",
+    "description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
+    "price": 250,
+    "category": "Calçados",
+    "img": "Tenis"
+  },
+  {
+    "_id": 4,
+    "name": "Jaqueta Jeans",
+    "description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
+    "price": 150,
+    "category": "Casacos",
+    "img": "Jaqueta"
+  },
+  {
+    "_id": 5,
+    "name": "Óculos Redondo",
+    "description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
+    "price": 120,
+    "category": "Óculos",
+    "img": "óculos"
+  },
+  {
+    "_id": 6,
+    "name": "Bolsa coringa",
+    "description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
+    "price": 120,
+    "category": "Bolsas",
+    "img": "Bolsa"
+  }
+]
