@@ -4,7 +4,7 @@ import React from 'react';
 import ProductModal from '../ProductModal';
 import { ProductsDiv, ProductsTitle, Item, TextDiv, Flex, ProductName, ProductDescription, ProductPrice, ProductButton } from "./styles"
 
-export default function Products() {
+export default function Products({ query }) {
     const [products, setProducts] = useState([])
     useEffect(() => {
         (async () => {
@@ -21,12 +21,12 @@ export default function Products() {
         price: 0,
         img: ''
     });
-
+    let search = query
     return (
         <ProductsDiv>
             <ProductsTitle>Produtos que estão bombando!</ProductsTitle>
             <Flex>
-                {products.map(product => (
+                {products.filter((product) => { return product.name.toLowerCase().includes(search.toLowerCase()) }).map((product) => (
                     <Item key={product._id}>
                         <img
                             src={`./images/Desktop/Imagens Cards/${product.img}.png`}

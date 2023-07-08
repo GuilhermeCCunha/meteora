@@ -3,7 +3,11 @@ import React, { useState } from 'react'
 import { StyledHeader, NavLinks, Menu, CloseSidebar, Anchor, Title } from './styles'
 import { useRouter } from 'next/router'
 
-export default function Header() {
+export default function Header({ onQuery }) {
+    function handleInput(e) {
+        onQuery(e.target.value);
+    }
+
     const [sidebar, setSidebar] = useState(false)
     const { asPath } = useRouter()
 
@@ -52,7 +56,7 @@ export default function Header() {
                 </Menu>
                 <ul className='search'>
                     <li>
-                        <input type="text" placeholder="Digite o produto" />
+                        <input type="text" placeholder="Digite o produto" onInput={handleInput} />
                     </li>
                     <li>
                         <button>
