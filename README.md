@@ -17,3 +17,9 @@ Projeto criado para o [challenge front-end 7ª edição](https://www.alura.com.b
 ## Detalhes do projeto
 
 O objetivo do desafio é criar o front-end da loja virtual fictícia de roupas **Meteora**.
+
+### Demonstração do filtro de categoria
+
+<br/>
+
+<img src="public/images/filter-by-category.gif"/>
