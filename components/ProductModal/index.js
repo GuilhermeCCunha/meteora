@@ -1,4 +1,5 @@
 import { Content, Modal, ModalHeader, Card, Price, Description, Colors, Sizes, StyledButton, SoldBy, Info } from "./styles";
+import ReactImageMagnify from 'react-image-magnify';
 
 export default function ProductModal(props) {
 
@@ -17,12 +18,22 @@ export default function ProductModal(props) {
                 </button>
             </ModalHeader>
             <Content>
-                <img
-                    src={`./images/Desktop/Imagens Cards/${props.img}.png`}
-                    width={350}
-                    height={422}
-                    alt={props.name}
-                />
+                <div className='ImgContainer'>
+                    <ReactImageMagnify {...{
+                        hoverDelayInMs: 400,
+                        isActivatedOnTouch: true,
+                        smallImage: {
+                            alt: props.name,
+                            isFluidWidth: true,
+                            src: props.img.includes("//") ? `${props.img}` : `./images/Desktop/Imagens Cards/${props.img}.png`,
+                        },
+                        largeImage: {
+                            src: props.img.includes("//") ? `${props.img}` : `./images/Desktop/Imagens Cards/${props.img}.png`,
+                            width: 1200,
+                            height: 1800
+                        }
+                    }} />
+                </div>
                 <Info>
                     <Card>
 

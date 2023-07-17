@@ -55,8 +55,9 @@ export const Content = styled.div`
 padding: 1rem 2rem;
 display: flex;
 font-size: 13px;
-img{
-    width: 50%;
+div.ImgContainer{
+    min-width: 42%;
+    max-width: 50%;
     height: auto;
 }
 input {
@@ -85,8 +86,8 @@ input {
 
 }
 @media (max-width: 768px) {
-    img{
-        width: 100%;
+    div.ImgContainer{
+        min-width: 100%;
         height: auto;
     }
 display: block;    
