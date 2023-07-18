@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NewsletterModal from '../NewsletterModal';
-import { NewsletterSection, NewsletterContent, NewsletterText, InputDiv, NewsletterEmail, NewsletterButton } from './styles'
+import { NewsletterSection, NewsletterContent, NewsletterText, NewsletterEmail, NewsletterButton, InputForm } from './styles'
 
 export default function Newsletter() {
     const [modalStatus, setModalStatus] = useState(false)
@@ -8,20 +8,20 @@ export default function Newsletter() {
         <NewsletterSection>
             <NewsletterContent>
                 <NewsletterText>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</NewsletterText>
-                <InputDiv>
+                <InputForm onSubmit={(event) => { event.preventDefault(); setModalStatus(true) }}>
                     <NewsletterEmail
                         type="email"
                         name="email"
                         id="email"
                         placeholder="Digite seu email"
+                        required
                     />
                     <NewsletterButton
-                        type="button"
-                        onClick={() => setModalStatus(true)}
+                        type="submit"
                     >
                         Enviar
                     </NewsletterButton>
-                </InputDiv>
+                </InputForm>
             </NewsletterContent>
 
             {modalStatus ? <NewsletterModal onClose={() => setModalStatus(false)} /> : null}

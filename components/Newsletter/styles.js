@@ -31,7 +31,7 @@ font-size: 20px;
 }
 `;
 
-export const InputDiv = styled.div`
+export const InputForm = styled.form`
 display: flex;
 justify-content: center;
 flex-wrap: nowrap;
