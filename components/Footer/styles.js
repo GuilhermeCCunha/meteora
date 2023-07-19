@@ -10,4 +10,13 @@ padding: 1rem 4rem;
 font-size: 13px;
 font-weight: 200;
 text-align: center;
+a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      color: #FFF;      
+    }
+}
 `;
