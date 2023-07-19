@@ -18,5 +18,8 @@ a {
     &:visited {
       color: #FFF;      
     }
+    &:link {
+      color: #FFF;      
+    }
 }
 `;
