@@ -44,7 +44,7 @@ margin-right: 0;
 font-size: 16px;
 width: 50%;
 @media (max-width: 768px) {
-    width: auto;
+    width: 100%;
 }
 `;
 
