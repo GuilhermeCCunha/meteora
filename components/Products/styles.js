@@ -3,10 +3,16 @@ import { colors } from "/styles/colors";
 
 export const ProductsDiv = styled.div`
 text-align: center;
+color: ${colors.defaultTextColor};
 `;
 
 export const ProductsTitle = styled.h3`
+font-size: 32px;
 padding-top: 3rem;
+font-weight: 500;
+@media (max-width: 1440px){
+    font-size: 28px;        
+}
 `;
 
 export const Item = styled.div`

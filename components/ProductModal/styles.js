@@ -15,6 +15,7 @@ box-shadow: 0px 0px 0px 99999px rgba(0, 0, 0, .75);
 top: 2%;
 bottom: 2%;
 text-align: left;
+color: ${colors.defaultTextColor};
 @media (max-width: 768px) {
     margin-left: 5vw;
     width: 90vw;
