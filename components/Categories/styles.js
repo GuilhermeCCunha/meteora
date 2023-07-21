@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { colors } from "/styles/colors";
 
 export const StyledCategories = styled.section`
 text-align: center;
@@ -18,7 +18,7 @@ margin: auto;
 `;
 
 export const Title = styled.h2`
-color: #212529;
+color: ${colors.defaultTextColor};
 font-size: 28px;
 font-weight: 700;   
 padding-bottom: 1.5rem; 
