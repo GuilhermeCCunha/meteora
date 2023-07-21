@@ -6,6 +6,7 @@ padding: 1.78125rem 1.74125rem;
 font-size: 0;
 display: flex;
 justify-content: center;
+color: ${colors.defaultTextColor};
 `;
 
 export const NewsletterContent = styled.div`
