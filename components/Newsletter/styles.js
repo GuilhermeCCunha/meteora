@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { colors } from "/styles/colors";
 
 export const NewsletterSection = styled.section`
 padding: 1.78125rem 1.74125rem;
@@ -51,7 +51,7 @@ width: 50%;
 export const NewsletterButton = styled.button`
 color: #fff;
 margin-left: 0;
-background-color: #9353FF;
+background-color: ${colors.primaryPurple};
 border: none;
 font-size: 16px;
 cursor:pointer;

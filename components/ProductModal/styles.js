@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "/styles/colors";
 
 export const Modal = styled.dialog`
 padding: 0;
@@ -71,7 +72,7 @@ input {
     border: 1px solid #ccc;
 
     &:checked {
-        box-shadow: inset 0 0 0 2.5px #9353FF; 
+        box-shadow: inset 0 0 0 2.5px ${colors.primaryPurple}; 
 
     }
     &#AzulClaro {
@@ -130,7 +131,7 @@ padding-bottom: 1.5rem;
 export const StyledButton = styled.button`
 border: none;
 cursor: pointer;
-background-color: #9353FF;
+background-color: ${colors.primaryPurple};
 color: #FFF;
 padding: .5rem 1rem;
 display: flex;

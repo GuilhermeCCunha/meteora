@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyles from '../globalStyles';
+import GlobalStyles from '../styles/globalStyles';
 import Footer from '../components/Footer';
 
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "/styles/colors";
 
 export const ProductsDiv = styled.div`
 text-align: center;
@@ -59,7 +60,7 @@ padding-bottom: 0rem;
 `;
 
 export const ProductButton = styled.button`
-background-color: #9353FF;
+background-color: ${colors.primaryPurple};
 text-decoration: none;
 padding: .75rem 1rem;
 border: none;
