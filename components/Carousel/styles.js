@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
---swiper-pagination-bullet-inactive-color: #999999;
---swiper-pagination-bullet-inactive-opacity: 1;
+--swiper-pagination-bullet-inactive-color: #FFFFFF;
+--swiper-pagination-bullet-inactive-opacity: 0.5;
 --swiper-pagination-bullet-horizontal-gap: 6px;
 --swiper-navigation-color: #fff;
---swiper-pagination-color: #fff;
+--swiper-pagination-color: #FFFFFF;
 --swiper-pagination-bullet-border-radius: 0px;
 --swiper-pagination-bullet-width: 42px;
 --swiper-pagination-bullet-height: 4px;
