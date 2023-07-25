@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { colors } from "/styles/colors";
 
 export const StyledFacilities = styled.div`
 background-color: #000000;
@@ -38,7 +38,7 @@ img{
 export const FacilitiesItemText = styled.div`
 h1{
     font-size: 16px;
-    color: #DAFF01;
+    color: ${colors.primaryGreen};
     font-weight: 700;
 }
 p{

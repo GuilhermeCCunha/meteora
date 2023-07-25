@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "/styles/colors";
 
 export const StyledFooter = styled.footer`
 background-color: #000000;
@@ -20,6 +21,9 @@ a {
     }
     &:link {
       color: #FFF;      
+    }
+    &:active {
+      color: ${colors.primaryGreen}  
     }
 }
 `;

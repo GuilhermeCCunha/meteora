@@ -1,4 +1,5 @@
 export const colors = {
     defaultTextColor: '#212529',
-    primaryPurple: '#9353FF',  
+    primaryGreen: '#DAFF01', 
+    primaryPurple: '#9353FF', 
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { colors } from "/styles/colors";
 
 export const StyledHeader = styled.header`
 @media (max-width: 768px) {
@@ -180,7 +180,7 @@ export const Anchor = styled.a`
   @media (max-width: 768px) {
   font-size: 16px;  
   &.active {
-    color: #DAFF01 !important;
+    color:  ${colors.primaryGreen} !important;
 
   }
   
