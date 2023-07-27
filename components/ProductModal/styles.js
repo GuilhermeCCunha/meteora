@@ -27,7 +27,7 @@ color: ${colors.defaultTextColor};
 export const ModalHeader = styled.div`
 display: flex;
 padding: 1rem;
-background-color: #000;
+background-color: ${colors.black};
 justify-content: space-between;
 align-items: center;
 gap: 1.3rem;
@@ -83,7 +83,7 @@ input {
         background-color: #F3F6F7;
     }
     &#Preto {
-        background-color: #000000;
+        background-color: ${colors.black};
     }
 
 }
@@ -157,7 +157,7 @@ hr{
     height: 0.1vh;
 }
 hr.hr1{
-    background-color: #000; 
+    background-color: ${colors.black}; 
     border: 0;
  }
 hr.hr2{

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { colors } from "/styles/colors";
 
 export const Modal = styled.dialog`
 padding: 0;
@@ -17,7 +17,7 @@ margin-top: 0;
 export const ModalHeader = styled.div`
 display: flex;
 padding: 1rem;
-background-color: #000;
+background-color: ${colors.black};
 justify-content: space-between;
 align-items: center;
 gap: 1.3rem;

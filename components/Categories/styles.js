@@ -41,7 +41,7 @@ width: 87.5%;
 `;
 
 export const Subtitles = styled.p`
-background-color: #000;
+background-color: ${colors.black};
 color: #FFF;
 padding: .5rem;
 @media (max-width: 1440px) {

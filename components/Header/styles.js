@@ -8,7 +8,7 @@ export const StyledHeader = styled.header`
   padding: 0 5vw;   
 }
 
-background-color: #000000;
+background-color: ${colors.black};
 
 height: 58px;
 display: flex;
@@ -34,7 +34,7 @@ nav{
         padding: 6px;
         min-height: 36px;
         font-size: 15px;
-        border: 1px solid #000;
+        border: 1px solid ${colors.black};
     }
     
       button{
@@ -67,8 +67,8 @@ nav{
         align-items: center;
         text-align: center;
         font-weight: 700;
-        border: 1px solid #000;
-        color: #000;
+        border: 1px solid ${colors.black};
+        color: ${colors.black};
         text-decoration: none;
       }
       input{
@@ -76,7 +76,7 @@ nav{
         max-width: 70vw;  
         padding: 4px;
         font-size: 18px;
-        border: 1px solid #000;
+        border: 1px solid ${colors.black};
         min-height: 0;
       }
       }

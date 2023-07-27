@@ -12,7 +12,7 @@ color: ${colors.defaultTextColor};
 export const NewsletterContent = styled.div`
 width: 50%;
 padding: 2.5rem 3.75rem;
-border: 1px solid #000;
+border: 1px solid ${colors.black};
 text-align: center;
 @media (max-width: 1440px){
     width: 80%;

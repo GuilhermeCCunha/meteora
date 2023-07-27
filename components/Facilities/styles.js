@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { colors } from "/styles/colors";
 
 export const StyledFacilities = styled.div`
-background-color: #000000;
+background-color: ${colors.black};
 padding: 2rem 1.5rem;
 color: #FFF;
 text-align: center;
