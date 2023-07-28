@@ -39,10 +39,10 @@ nav{
     
       button{
         background: none;
-        color: #fff;
+        color: ${colors.white};
         font-weight: 400;
         padding: 6px;
-        border: 1px solid #fff;
+        border: 1px solid ${colors.white};
         font-size: 18px;
       }
       @media (max-width: 1440px) {
@@ -90,7 +90,7 @@ ul{
     // margin: 512px;
     margin-left: 32vw;
     list-style: none;
-    color: #FFFFFF;
+    color: ${colors.white};
     a:link { color: inherit;
         text-decoration: none;
         }
@@ -138,7 +138,7 @@ ul{
     }
     hr{
       display: block;
-      border: 1px solid #FFFFFF;
+      border: 1px solid ${colors.white};
       width: 75%;
     }
   }
@@ -176,7 +176,7 @@ export const Anchor = styled.a`
   font-size: 16px;
   height: 100px;
   transition: 0.3s;
-  color: #FFFFFF;
+  color: ${colors.white};
   @media (max-width: 768px) {
   font-size: 16px;  
   &.active {
@@ -190,11 +190,11 @@ export const Anchor = styled.a`
     display: flex;
     padding: 0px 10px;
   }
-  &:link { color: #FFFFFF ;
+  &:link { color: ${colors.white} ;
     text-decoration: none;
     }
   &:visited
-     { color: #FFFFFF; }
+     { color: ${colors.white}; }
 `;
 
 export const Title = styled.div`

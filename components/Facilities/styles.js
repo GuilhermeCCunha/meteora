@@ -4,7 +4,7 @@ import { colors } from "/styles/colors";
 export const StyledFacilities = styled.div`
 background-color: ${colors.black};
 padding: 2rem 1.5rem;
-color: #FFF;
+color: ${colors.white};
 text-align: center;
 margin-top: 3.3125rem;
 `;

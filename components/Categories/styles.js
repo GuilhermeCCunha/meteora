@@ -42,7 +42,7 @@ width: 87.5%;
 
 export const Subtitles = styled.p`
 background-color: ${colors.black};
-color: #FFF;
+color: ${colors.white};
 padding: .5rem;
 @media (max-width: 1440px) {
 width: 125%;

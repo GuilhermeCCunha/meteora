@@ -70,5 +70,5 @@ background-color: ${colors.primaryPurple};
 text-decoration: none;
 padding: .75rem 1rem;
 border: none;
-color: #FFF;
+color: ${colors.white};
 `;

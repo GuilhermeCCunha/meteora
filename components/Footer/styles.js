@@ -3,7 +3,7 @@ import { colors } from "/styles/colors";
 
 export const StyledFooter = styled.footer`
 background-color: ${colors.black};
-color: #FFF;
+color: ${colors.white};
 display: flex;
 justify-content: center;
 align-items: center;
@@ -17,10 +17,10 @@ a {
       text-decoration: underline;
     }
     &:visited {
-      color: #FFF;      
+      color: ${colors.white};      
     }
     &:link {
-      color: #FFF;      
+      color: ${colors.white};      
     }
     &:active {
       color: ${colors.primaryGreen}  

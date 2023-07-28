@@ -31,7 +31,7 @@ background-color: ${colors.black};
 justify-content: space-between;
 align-items: center;
 gap: 1.3rem;
-color: #FFF;
+color: ${colors.white};
 button{
     background: none;
     border: none;
@@ -133,7 +133,7 @@ export const StyledButton = styled.button`
 border: none;
 cursor: pointer;
 background-color: ${colors.primaryPurple};
-color: #FFF;
+color: ${colors.white};
 padding: .5rem 1rem;
 display: flex;
 align-items: center;

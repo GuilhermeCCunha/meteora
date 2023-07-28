@@ -50,7 +50,7 @@ width: 50%;
 `;
 
 export const NewsletterButton = styled.button`
-color: #fff;
+color: ${colors.white};
 margin-left: 0;
 background-color: ${colors.primaryPurple};
 border: none;

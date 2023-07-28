@@ -21,7 +21,7 @@ background-color: ${colors.black};
 justify-content: space-between;
 align-items: center;
 gap: 1.3rem;
-color: #FFF;
+color: ${colors.white};
 div{
     display: flex;
     align-items: center;
