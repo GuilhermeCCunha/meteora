@@ -10,7 +10,7 @@ export default function Categories({ category, setCategory }) {
 
                 <Item onClick={() => category === "Camisetas" ? setCategory("") : setCategory("Camisetas")}>
                     <Image
-                        src="/images/Desktop/Categorias/Categoria camiseta.png"
+                        src="/images/desktop/Categorias/Categoria camiseta.png"
                         alt="Categoria camisetas"
                         width={160}
                         height={157}
@@ -20,7 +20,7 @@ export default function Categories({ category, setCategory }) {
 
                 <Item onClick={() => category === "Bolsas" ? setCategory("") : setCategory("Bolsas")}>
                     <Image
-                        src="/images/Desktop/Categorias/Categoria Bolsa.png"
+                        src="/images/desktop/Categorias/Categoria Bolsa.png"
                         alt="Categoria bolsas"
                         width={160}
                         height={157}
@@ -30,7 +30,7 @@ export default function Categories({ category, setCategory }) {
 
                 <Item onClick={() => category === "Calçados" ? setCategory("") : setCategory("Calçados")}>
                     <Image
-                        src="/images/Desktop/Categorias/Categoria Calçados.png"
+                        src="/images/desktop/Categorias/Categoria Calçados.png"
                         alt="Categoria calçados"
                         width={160}
                         height={157}
@@ -40,7 +40,7 @@ export default function Categories({ category, setCategory }) {
 
                 <Item onClick={() => category === "Calças" ? setCategory("") : setCategory("Calças")}>
                     <Image
-                        src="/images/Desktop/Categorias/Categoria calça.png"
+                        src="/images/desktop/Categorias/Categoria calça.png"
                         alt="Categoria calças"
                         width={160}
                         height={157}
@@ -50,7 +50,7 @@ export default function Categories({ category, setCategory }) {
 
                 <Item onClick={() => category === "Casacos" ? setCategory("") : setCategory("Casacos")} >
                     <Image
-                        src="/images/Desktop/Categorias/Categoria casacos.png"
+                        src="/images/desktop/Categorias/Categoria casacos.png"
                         alt="Categoria casacos"
                         width={160}
                         height={157}
@@ -60,7 +60,7 @@ export default function Categories({ category, setCategory }) {
 
                 <Item onClick={() => category === "Óculos" ? setCategory("") : setCategory("Óculos")} >
                     <Image
-                        src="/images/Desktop/Categorias/Categoria óculos.png"
+                        src="/images/desktop/Categorias/Categoria óculos.png"
                         alt="Categoria óculos"
                         width={160}
                         height={157}

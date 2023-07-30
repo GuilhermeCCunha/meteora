@@ -25,10 +25,10 @@ export default function ProductModal(props) {
                         smallImage: {
                             alt: props.name,
                             isFluidWidth: true,
-                            src: props.img.includes("//") ? `${props.img}` : `./images/Desktop/Imagens Cards/${props.img}.png`,
+                            src: props.img.includes("//") ? `${props.img}` : `./images/desktop/Imagens Cards/${props.img}.png`,
                         },
                         largeImage: {
-                            src: props.img.includes("//") ? `${props.img}` : `./images/Desktop/Imagens Cards/${props.img}.png`,
+                            src: props.img.includes("//") ? `${props.img}` : `./images/desktop/Imagens Cards/${props.img}.png`,
                             width: 1200,
                             height: 1800
                         }
