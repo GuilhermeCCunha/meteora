@@ -19,7 +19,7 @@ export default function Header({ onQuery }) {
     return (
         <StyledHeader>
             <nav>
-                <Title><img src='./images/Mobile/Logo mobile.png' /></Title>
+                <Title><img src='./images/mobile/logo-mobile.png' /></Title>
                 <NavLinks sidebar={sidebar ? 1 : 0}>
                     <CloseSidebar onClick={showSiderbar}><img src='./images/marca-cruzada 1.svg' /></CloseSidebar>
                     <Anchor className={activeLink('') || activeLink('#')} onClick={showSiderbar} href="#">
