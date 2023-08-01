@@ -32,7 +32,7 @@ export default function Products({ query, category }) {
                     .map((product) => (
                         <Item key={product._id}>
                             <img
-                                src={product.img.includes("//") ? `${product.img}` : `./images/desktop/Imagens Cards/${product.img}.png`}
+                                src={product.img.includes("//") ? `${product.img}` : `./images/desktop/imagens-cards/${product.img}.png`}
                                 alt={product.name}
                             />
                             <TextDiv>
