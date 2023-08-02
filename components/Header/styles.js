@@ -57,7 +57,6 @@ nav{
       position: absolute;
       padding-top: 135px;  
       margin-left: -27px;  
-      // display: none;
       button{
         min-width: 12vw;
         max-width: 70vw;  
@@ -87,7 +86,6 @@ ul{
     margin-left: 2vw;
   }
     padding: 0;
-    // margin: 512px;
     margin-left: 32vw;
     list-style: none;
     color: ${colors.white};
@@ -99,7 +97,7 @@ ul{
 }   
  `;
 
- export const NavLinks = styled.nav`
+export const NavLinks = styled.nav`
   hr{
     display: none;
   }
@@ -109,7 +107,7 @@ ul{
     gap: 0.1vw;
   }
   @media (max-width: 768px) {
-    z-index: 20;/*evita que a barra de menu fique por baixo da imagem*/
+    z-index: 20;
     flex-direction: column;
     background-color: #343A40;
     position: fixed;
@@ -131,7 +129,7 @@ ul{
       background-color: darkgray; 
     } 
     a {
-      margin-top: 15px; /*assim a barra de menu fica melhor em telas menores*/
+      margin-top: 15px;
       display: flex;
       align-items: center;
       justify-content: space-around;

@@ -19,9 +19,9 @@ export default function Header({ onQuery }) {
     return (
         <StyledHeader>
             <nav>
-                <Title><img src='./images/mobile/logo-mobile.png' /></Title>
+                <Title><img src='./images/mobile/logo-mobile.png' alt="Logo da loja Meteora" /></Title>
                 <NavLinks sidebar={sidebar ? 1 : 0}>
-                    <CloseSidebar onClick={showSiderbar}><img src='./images/marca-cruzada 1.svg' /></CloseSidebar>
+                    <CloseSidebar onClick={showSiderbar}><img src='./images/close-menu-icon.svg' alt="close menu" /></CloseSidebar>
                     <Anchor className={activeLink('') || activeLink('#')} onClick={showSiderbar} href="#">
                         Home
                     </Anchor>
@@ -39,7 +39,7 @@ export default function Header({ onQuery }) {
                     </Anchor>
                 </NavLinks>
                 <Menu>
-                    <img src='./images/Icon Color.svg' onClick={showSiderbar} />
+                    <img src='./images/menu-bar-icon.svg' alt="menu" onClick={showSiderbar} />
                 </Menu>
                 <ul className='search'>
                     <li>
