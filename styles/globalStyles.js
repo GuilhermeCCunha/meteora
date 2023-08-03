@@ -9,5 +9,10 @@ export default  createGlobalStyle`
     }
     a, button {
         cursor: pointer;
+    }
+    .default-container {
+     height: 70vh;
+     text-align: center;
+     margin-top: 30vh;
     } 
 `    

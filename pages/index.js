@@ -4,11 +4,9 @@ import Categories from "../components/Categories";
 import Products from "../components/Products";
 import Facilities from "../components/Facilities";
 import Newsletter from "../components/Newsletter";
-import Header from "../components/Header";
 import { useState } from "react";
 
-export default function Home() {
-  const [query, setQuery] = useState("");
+export default function Home({ query }) {
   const [category, setCategory] = useState("");
 
   return (
@@ -16,7 +14,6 @@ export default function Home() {
       <Head>
         <title>Meteora</title>
       </Head>
-      <Header onQuery={setQuery} />
       <Carousel />
       <Categories category={category} setCategory={setCategory} />
       <Products query={query} category={category} />

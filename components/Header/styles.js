@@ -12,8 +12,8 @@ background-color: ${colors.black};
 
 height: 58px;
 display: flex;
-justify-content: center;
-padding: 0 20px;   
+justify-content: left;
+padding: 0 39.5px;   
 nav{
   @media (max-width: 768px) {
     justify-content: space-between;
@@ -98,6 +98,9 @@ ul{
  `;
 
 export const NavLinks = styled.nav`
+ a:link {
+      text-decoration: none;
+}
   hr{
     display: none;
   }
@@ -128,8 +131,9 @@ export const NavLinks = styled.nav`
       border-radius: 10px;
       background-color: darkgray; 
     } 
-    a {
-      margin-top: 15px;
+    button {
+      margin-top: 16px;
+      margin-bottom: 0px;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -167,7 +171,10 @@ export const CloseSidebar = styled.div`
   }
 `;
 
-export const Anchor = styled.a`
+export const Anchor = styled.button`
+background: none;
+border: none;
+
 @media (max-width: 1440px) {
   font-size: 14px;
 }
@@ -176,7 +183,8 @@ export const Anchor = styled.a`
   transition: 0.3s;
   color: ${colors.white};
   @media (max-width: 768px) {
-  font-size: 16px;  
+  font-size: 16px;
+  height: 65px;  
   &.active {
     color:  ${colors.primaryGreen} !important;
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { StyledHeader, NavLinks, Menu, CloseSidebar, Anchor, Title } from './styles'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 export default function Header({ onQuery }) {
     function handleInput(e) {
@@ -10,6 +11,8 @@ export default function Header({ onQuery }) {
     const [sidebar, setSidebar] = useState(false)
     const { asPath } = useRouter()
 
+    const router = useRouter();
+    const showSearch = router.pathname === '/' ? true : false;
     const showSiderbar = () => setSidebar(!sidebar)
 
     function activeLink(path) {
@@ -22,35 +25,37 @@ export default function Header({ onQuery }) {
                 <Title><img src='./images/mobile/logo-mobile.png' alt="Logo da loja Meteora" /></Title>
                 <NavLinks sidebar={sidebar ? 1 : 0}>
                     <CloseSidebar onClick={showSiderbar}><img src='./images/close-menu-icon.svg' alt="close menu" /></CloseSidebar>
-                    <Anchor className={activeLink('') || activeLink('#')} onClick={showSiderbar} href="#">
-                        Home
-                    </Anchor>
+                    <Link href="/">
+                        <Anchor className={activeLink('')} onClick={showSiderbar}>Home</Anchor>
+                    </Link>
                     <hr />
-                    <Anchor onClick={showSiderbar} href="#">
-                        Nossas lojas
-                    </Anchor>
+                    <Link href="/soon">
+                        <Anchor onClick={showSiderbar}>Nossas lojas</Anchor>
+                    </Link>
                     <hr />
-                    <Anchor onClick={showSiderbar} href="#">
-                        Novidades
-                    </Anchor>
+                    <Link href="/soon">
+                        <Anchor onClick={showSiderbar}>Novidades</Anchor>
+                    </Link>
                     <hr />
-                    <Anchor onClick={showSiderbar} href="#">
-                        Promoções
-                    </Anchor>
+                    <Link href="/soon">
+                        <Anchor onClick={showSiderbar}>Promoções</Anchor>
+                    </Link>
                 </NavLinks>
                 <Menu>
                     <img src='./images/menu-bar-icon.svg' alt="menu" onClick={showSiderbar} />
                 </Menu>
-                <ul className='search'>
-                    <li>
-                        <input type="text" placeholder="Digite o produto" onInput={handleInput} />
-                    </li>
-                    <li>
-                        <button>
-                            Buscar
-                        </button>
-                    </li>
-                </ul>
+                {showSearch &&
+                    <ul className='search'>
+                        <li>
+                            <input type="text" placeholder="Digite o produto" onInput={handleInput} />
+                        </li>
+                        <li>
+                            <button>
+                                Buscar
+                            </button>
+                        </li>
+                    </ul>
+                }
             </nav>
         </StyledHeader>
     )
