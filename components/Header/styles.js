@@ -21,7 +21,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px; 
+    padding: 15px 20px; 
     ul{
         display: flex;
     }
@@ -110,6 +110,7 @@ export const NavLinks = styled.nav`
     gap: 0.1vw;
   }
   @media (max-width: 768px) {
+    align-items: start !important;
     z-index: 20;
     flex-direction: column;
     background-color: #343A40;
@@ -132,8 +133,8 @@ export const NavLinks = styled.nav`
       background-color: darkgray; 
     } 
     button {
-      margin-top: 16px;
-      margin-bottom: 0px;
+      margin-top: 20px;
+      margin-bottom: 5px;
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -141,7 +142,7 @@ export const NavLinks = styled.nav`
     hr{
       display: block;
       border: 1px solid ${colors.white};
-      width: 75%;
+      width: 100%;
     }
   }
 `;
@@ -161,7 +162,7 @@ export const Menu = styled.div`
 export const CloseSidebar = styled.div`
   font-size: 30px;
   right: 15px;
-  top: 15px;
+  top: 12px;
   position: absolute;
   display: none;
   cursor: pointer;
@@ -184,7 +185,7 @@ border: none;
   color: ${colors.white};
   @media (max-width: 768px) {
   font-size: 16px;
-  height: 65px;  
+  height: 20px;  
   &.active {
     color:  ${colors.primaryGreen} !important;
 
