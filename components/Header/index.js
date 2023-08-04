@@ -20,7 +20,7 @@ export default function Header({ onQuery }) {
     }
 
     return (
-        <StyledHeader>
+        <StyledHeader $showSearch={showSearch} >
             <nav>
                 <Title><img src='./images/mobile/logo-mobile.png' alt="Logo da loja Meteora" /></Title>
                 <NavLinks sidebar={sidebar ? 1 : 0}>

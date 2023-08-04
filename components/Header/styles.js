@@ -3,7 +3,7 @@ import { colors } from "/styles/colors";
 
 export const StyledHeader = styled.header`
 @media (max-width: 768px) {
-  margin-bottom: 78px;
+  margin-bottom: ${props => props.$showSearch ? '78px' : '0'};
   justify-content: space-between;
   padding: 0 5vw;   
 }
