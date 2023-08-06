@@ -25,9 +25,6 @@ nav{
     ul{
         display: flex;
     }
-    ul.links{
-       gap: 40px;
-    }
     ul.search{
       gap: .5rem;
       input {
@@ -172,15 +169,17 @@ export const CloseSidebar = styled.div`
   }
 `;
 
-export const Anchor = styled.button`
+export const StyledLink = styled.button`
 background: none;
 border: none;
-
+&:hover {
+  color: ${colors.primaryGreen} !important;  
+}
 @media (max-width: 1440px) {
   font-size: 14px;
 }
   font-size: 16px;
-  height: 100px;
+  height: 32px;
   transition: 0.3s;
   color: ${colors.white};
   @media (max-width: 768px) {
