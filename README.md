@@ -22,4 +22,4 @@ O objetivo do desafio é criar o front-end da loja virtual fictícia de roupas *
 
 <br/>
 
-<img src="public/images/filter-by-category.gif"/>
+<img src="public/images/filter-by-category1.gif"/>
