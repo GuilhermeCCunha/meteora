@@ -9,7 +9,7 @@ text-align: center;
 margin-top: 3.3125rem;
 `;
 
-export const FacilitiesTitle = styled.h1`
+export const FacilitiesTitle = styled.h2`
 font-size: 32px;
 padding-bottom: 2rem;
 font-weight: 500;
@@ -36,7 +36,7 @@ img{
 `;
 
 export const FacilitiesItemText = styled.div`
-h1{
+h3{
     font-size: 16px;
     color: ${colors.primaryGreen};
     font-weight: 700;
