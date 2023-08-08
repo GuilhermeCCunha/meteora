@@ -176,10 +176,11 @@ border: none;
   color: ${colors.primaryGreen} !important;  
 }
 @media (max-width: 1440px) {
-  font-size: 14px;
+  font-size: 13px;
 }
   font-size: 16px;
   height: 32px;
+  white-space: nowrap;
   transition: 0.3s;
   color: ${colors.white};
   @media (max-width: 768px) {
