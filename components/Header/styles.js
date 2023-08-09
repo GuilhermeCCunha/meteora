@@ -80,7 +80,7 @@ nav{
 }
 ul{
   @media (max-width: 1440px) {
-    margin-left: 2vw;
+    margin-left: 7vw;
   }
     padding: 0;
     margin-left: 32vw;
