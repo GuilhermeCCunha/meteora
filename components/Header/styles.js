@@ -47,6 +47,10 @@ nav{
           max-width: 10vw; 
           font-size: 8px;
         }
+        button{
+          font-size: 13px;
+          min-height: 36px;
+        }
       }
       @media (max-width: 768px) {
       gap: 1.7vw;  
@@ -66,6 +70,8 @@ nav{
         border: 1px solid ${colors.black};
         color: ${colors.black};
         text-decoration: none;
+        font-size: 18px;
+        min-height: auto;
       }
       input{
         min-width: 70vw;
