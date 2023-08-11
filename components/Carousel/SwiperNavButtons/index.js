@@ -8,10 +8,14 @@ export const SwiperNavButtons = () => {
     return (
         <>
             <StyledPrev>
-                <button onClick={() => swiper.slidePrev()}><img src='./images/prev.svg' /></button>
+                <button onClick={() => swiper.slidePrev()}>
+                    <img src='./images/prev.svg' alt='previous button' />
+                </button>
             </StyledPrev>
             <StyledNext>
-                <button onClick={() => swiper.slideNext()}><img src='./images/next.svg' /></button>
+                <button onClick={() => swiper.slideNext()}>
+                    <img src='./images/next.svg' alt='next button' />
+                </button>
             </StyledNext>
         </>
     );
